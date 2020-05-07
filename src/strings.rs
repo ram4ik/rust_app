@@ -23,3 +23,10 @@ fn count_l(s:&str) -> i32 {
     }
     res
 }
+
+#[test]
+fn string_contain_two_l() {
+    let s = String::from("This is for test purpuse: Color is purple.");
+
+    assert_eq!(2, count_l(&s));
+}
