@@ -32,4 +32,5 @@ pub(crate) fn array() {
     for n in v {
         println!("{}", n);
     }
+    
 }

@@ -2,6 +2,7 @@ mod syntax;
 mod basic_loops;
 mod strings;
 mod struct_and_methods;
+mod control_flow_in;
 
 fn main() {
     syntax();
@@ -16,7 +17,7 @@ fn syntax() {
     format!("{} is highest", b);
 
     let o = syntax::other(15, 19);
-    println!("{} is other", o)
+    println!("{} is other", o);
 }
 
 fn basic_loops() {
@@ -28,6 +29,10 @@ fn basic_loops() {
 
 fn strings() {
     strings::strings_chars_and_bytes();
+
+    let x = control_flow_in::match_four(4);
+    let y = control_flow_in::return_five();
+    println!("{} + {} = {}", x, y, x + y);
 }
 
 fn struct_and_methods() {
